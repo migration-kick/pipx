@@ -83,7 +83,7 @@ PIPX_DESCRIPTION += pipx_wrap(
     keep_newlines=True,
 )
 
-DOC_DEFAULT_PYTHON = os.getenv("PIPX__DOC_DEFAULT_PYTHON", DEFAULT_PYTHON)
+PIPX_DEFAULT_PYTHON = os.getenv("PIPX_DEFAULT_PYTHON", DEFAULT_PYTHON)
 
 INSTALL_DESCRIPTION = textwrap.dedent(
     f"""
@@ -114,7 +114,7 @@ INSTALL_DESCRIPTION = textwrap.dedent(
     overridden by setting the environment variable `PIPX_BIN_DIR`.
 
     The default python executable used to install a package is
-    {DOC_DEFAULT_PYTHON} and can be overridden
+    {DEFAULT_PYTHON} and can be overridden
     by setting the environment variable `PIPX_DEFAULT_PYTHON`.
     """
 )
